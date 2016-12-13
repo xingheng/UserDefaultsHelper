@@ -1,6 +1,0 @@
-use_frameworks!
-target 'UserDefaultsHelper_Tests' do
-  pod 'UserDefaultsHelper', :path => '../'
-  
-  
-end
