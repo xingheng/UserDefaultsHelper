@@ -8,21 +8,20 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UserDefaultsHelper'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A wrapper with C-style for NSUserDefaults class, in Objective-C.'
   s.description      = <<-DESC
     Replace the duplicated [NSUserDefaults standardUserDefaults] methods with C-style functions for easy call.
                        DESC
-  s.homepage         = 'https://github.com/xingheng/UserDefault'
+  s.homepage         = 'https://github.com/xingheng/UserDefaultsHelper'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Will Han' => 'xingheng.hax@qq.com' }
-  s.source           = { :git => 'https://github.com/xingheng/UserDefault.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/xingheng/UserDefaultsHelper.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '6.0'
 
   s.source_files = 'UserDefaultsHelper/**/*'
 
-  s.public_header_files = 'Pod/**/*.h'
+  s.public_header_files = 'UserDefaultsHelper/UserDefault.h'
   s.frameworks = 'Foundation'
-
 end
