@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UserDefaultsHelper'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A wrapper with C-style for NSUserDefaults class, in Objective-C.'
   s.description      = <<-DESC
     Replace the duplicated [NSUserDefaults standardUserDefaults] methods with C-style functions for easy call.

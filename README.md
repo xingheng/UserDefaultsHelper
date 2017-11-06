@@ -1,6 +1,5 @@
 # UserDefaultsHelper
 
-[![CI Status](http://img.shields.io/travis/Wei Han/UserDefaultsHelper.svg?style=flat)](https://travis-ci.org/Wei Han/UserDefaultsHelper)
 [![Version](https://img.shields.io/cocoapods/v/UserDefaultsHelper.svg?style=flat)](http://cocoapods.org/pods/UserDefaultsHelper)
 [![License](https://img.shields.io/cocoapods/l/UserDefaultsHelper.svg?style=flat)](http://cocoapods.org/pods/UserDefaultsHelper)
 [![Platform](https://img.shields.io/cocoapods/p/UserDefaultsHelper.svg?style=flat)](http://cocoapods.org/pods/UserDefaultsHelper)
@@ -12,7 +11,7 @@
     [[NSUserDefaults standardUserDefaults] setObject:@"fooValue" forKey:strUserDefaultKey];
     NSString *obj = [[NSUserDefaults standardUserDefaults] objectForKey:strUserDefaultKey];
 
-Tired of the above usage in your project? **Why not UserDefault? It's simple and brief!**
+Tired of the above usage in your project? **Why not UserDefaultsHelper? It's simple and brief!**
 
 Let's do a replacement for the above code,
 
@@ -24,40 +23,40 @@ Let's do a replacement for the above code,
 
 Certainly, there is a map list for all kinds of objects for you,
 
-Type    |   Getter  |   Setter
---------|-----------|-----------
-Integer     |   UserDefaultInteger  |   SetUserDefaultInteger
-BOOL        |   UserDefaultBool     |   SetUserDefaultBool
-float       |   UserDefaultFloat    |   SetUserDefaultFloat
-double      |   UserDefaultDouble   |   SetUserDefaultDouble
-NSURL       |   UserDefaultURL      |   SetUserDefaultURL
-NSString    |   UserDefaultString   |   SetUserDefaultObject
-NSArray     |   UserDefaultArray    |   SetUserDefaultObject
-NSDictionary|   UserDefaultDictionary|  SetUserDefaultObject
-NSData      |   UserDefaultData     |   SetUserDefaultObject
-id          |   UserDefaultObject   |   SetUserDefaultObject
+| Type         | Getter                | Setter                |
+| ------------ | --------------------- | --------------------- |
+| Integer      | UserDefaultInteger    | SetUserDefaultInteger |
+| BOOL         | UserDefaultBool       | SetUserDefaultBool    |
+| float        | UserDefaultFloat      | SetUserDefaultFloat   |
+| double       | UserDefaultDouble     | SetUserDefaultDouble  |
+| NSURL        | UserDefaultURL        | SetUserDefaultURL     |
+| NSString     | UserDefaultString     | SetUserDefaultObject  |
+| NSArray      | UserDefaultArray      | SetUserDefaultObject  |
+| NSDictionary | UserDefaultDictionary | SetUserDefaultObject  |
+| NSData       | UserDefaultData       | SetUserDefaultObject  |
+| id           | UserDefaultObject     | SetUserDefaultObject  |
 
 
 <br />
 Besides, some useful helper functions serve for you, too.
 
     // Send sync message to standard userdefault explicitly.
-    void UserDefaultSynchronize();  
+    void UserDefaultSynchronize(void);  
     
     // Remove the specified key from userdefault.
     void UserDefaultRemoveKey(NSString *key);
-
+    
     // Register the specified default dictionary to userdefault.
     void UserDefaultRegister(NSDictionary *defaultDictionary);
-
+    
     // Return all the values in userdefault as a dictionary.
-    NSDictionary *UserDefaultAllValue();
-
+    NSDictionary *UserDefaultAllValue(void);
+    
     // Remove all the custome values except the specified keys' pair.
     void UserDefaultClearAllExcept(NSArray *keys);
-
+    
     // Remove all the custom values.
-    void UserDefaultClearAll();
+    void UserDefaultClearAll(void);
 
 
 
