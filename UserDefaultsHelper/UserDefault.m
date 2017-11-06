@@ -15,7 +15,7 @@
 
 #pragma mark - Helper
 
-void UserDefaultSynchronize()
+void UserDefaultSynchronize(void)
 {
     [StandardUserDefault synchronize];
 }
@@ -30,7 +30,7 @@ void UserDefaultRegister(NSDictionary *defaultDictionary)
     [StandardUserDefault registerDefaults:defaultDictionary];
 }
 
-NSDictionary *UserDefaultAllValue()
+NSDictionary *UserDefaultAllValue(void)
 {
     return [StandardUserDefault dictionaryRepresentation];
 }
@@ -46,7 +46,7 @@ void UserDefaultClearAllExcept(NSArray *keys)
     UserDefaultSynchronize();
 }
 
-void UserDefaultClearAll()
+void UserDefaultClearAll(void)
 {
     UserDefaultClearAllExcept(nil);
 }

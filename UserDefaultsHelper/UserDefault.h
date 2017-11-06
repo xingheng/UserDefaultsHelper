@@ -12,17 +12,17 @@
 
 #pragma mark - Helper
 
-void UserDefaultSynchronize();
+void UserDefaultSynchronize(void);
 
 void UserDefaultRemoveKey(NSString *key);
 
 void UserDefaultRegister(NSDictionary *defaultDictionary);
 
-NSDictionary *UserDefaultAllValue();
+NSDictionary *UserDefaultAllValue(void);
 
 void UserDefaultClearAllExcept(NSArray *keys);
 
-void UserDefaultClearAll();
+void UserDefaultClearAll(void);
 
 
 #pragma mark - Getter
